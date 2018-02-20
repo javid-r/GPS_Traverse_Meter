@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.practice.javid.gps_traverse_meter.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout style="@style/LinearLayoutBlockContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_label_start_lat"
+                style="@style/TextViewLabel"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/txt_label_current_lat"
+                style="@style/TextViewLabel"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_value_start_lat"
+                style="@style/TextViewAmount"
+                android:hint="@string/start_lat" />
+
+            <TextView
+                android:id="@+id/txt_value_current_lat"
+                style="@style/TextViewAmount"
+                android:hint="@string/current_lat" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutBlockContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_label_start_lon"
+                style="@style/TextViewLabel"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/txt_label_current_lon"
+                style="@style/TextViewLabel"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_value_start_lon"
+                style="@style/TextViewAmount"
+                android:hint="@string/start_lon" />
+
+            <TextView
+                android:id="@+id/txt_value_current_lon"
+                style="@style/TextViewAmount"
+                android:hint="@string/current_lon" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutBlockContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_label_start_alt"
+                style="@style/TextViewLabel"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/txt_label_current_alt"
+                style="@style/TextViewLabel"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_value_start_alt"
+                style="@style/TextViewAmount"
+                android:hint="@string/start_alt" />
+
+            <TextView
+                android:id="@+id/txt_value_current_alt"
+                style="@style/TextViewAmount"
+                android:hint="@string/current_alt" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearLayoutBlockContainer"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_label_start_time"
+                style="@style/TextViewLabel"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/txt_label_total_time"
+                style="@style/TextViewLabel"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_value_start_time"
+                style="@style/TextViewAmount"
+                android:hint="@string/start_time" />
+
+            <TextView
+                android:id="@+id/txt_value_total_time"
+                style="@style/TextViewAmount"
+                android:hint="@string/total_time" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutBlockContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_label_distance"
+                style="@style/TextViewLabel"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_value_distance"
+                style="@style/TextViewAmount"
+                android:hint="@string/distance" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/LinearLayoutBlockContainer"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/btn_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!--<android.support.design.widget.FloatingActionButton
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_constraintBottom_toBottomOf="parent" />-->
+
+    </LinearLayout>
+
+</LinearLayout>
